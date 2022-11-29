@@ -11,9 +11,11 @@ public class Tshirts {
 
     public static void main(String[] args) { 
         assert(size(37) == "S");
-        assert(size(38) == "M");
         assert(size(40) == "M");
         assert(size(43) == "L");
+        assert(size(50) == "L");
+        // If size is 38 cms then it has to be classified as 'S'
+        assert(size(38) == "S");
         System.out.println("All is well (maybe!)");
     }
 }
